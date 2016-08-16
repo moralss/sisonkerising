@@ -1,25 +1,31 @@
 my_list_1 = [1,5,8,11,12,15]
-def get_value_at( value , my_list):
-    for index in my_list:
-        show = my_list[value]
-    print(my_list[value])
 
-#get_value_at(2,my_list_1)
+def get_value_at( index , my_list):
+    show_index = my_list[index]
+    return(show_index)
+
+result_for_value = get_value_at(1,my_list_1)
+print(result_for_value)
     
-def get_index_of_value(value,my_list):
-    for index in range(0,len(my_list)):
-        show = my_list[value]
-    print(show)
+def get_index_at( value , my_list):
+    required_index = []
+    length_of_list = range(0,len(my_list)-1) 
+    for index in length_of_list:
+        if my_list[index] == value:
+            required_index.append(index)
+    return required_index
+             
+result_for_index = get_index_at(1,my_list_1)
+print(result_for_index)
 
-##get_index_of_value(1,my_list_1)
-
-
-def sisonke_length(my_list):
+def display_sisonke_length(my_list):
+    current_total = 0
     for index in my_list:
-        value = range(0,index+1)
-    for total in value:
-        number = value    
-    print(int(number)
+        current_total += 1
+    return(current_total)
 
-sisonke_length(my_list_1)
+result_for_length = display_sisonke_length(my_list_1)
+print(result_for_length)
+
+
 
