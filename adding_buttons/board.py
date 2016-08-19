@@ -2,12 +2,6 @@ from tkinter import*
 from tkinter import ttk
 root = Tk()
 
-canvas = Canvas(root,width=800,height=600)
-
-
-favourite_cars = {"bmw":"2015audis8plusplacement626x382.gif","audi":"images.gif"}
-
-
 def show_picture_for_bmw():
     global photo
     photo = PhotoImage(file = "images.gif")
@@ -29,20 +23,17 @@ def show_picture_for_golf():
 
 
 def create_button_for_bmw():
-    Button = ttk.Button(text = "bmw" , command=lambda:show_picture_for_bmw())
+    Button = ttk.Button(text = "bmw" , command = lambda:show_picture_for_bmw())
     Button.pack()
 
 def create_button_for_audi():
-    Button = ttk.Button(text = "audi" , command=lambda:show_picture_for_audi())
+    Button = ttk.Button(text = "audi" , command = lambda:show_picture_for_audi())
     Button.pack()
 
 def create_button_for_golf():
-    Button = ttk.Button(text = "golf" , command=lambda:show_picture_for_golf())
+    Button = ttk.Button(text = "golf" , command = lambda:show_picture_for_golf())
     Button.pack()
-
-    
-    
-    
+   
         
 
 create_button_for_bmw()
